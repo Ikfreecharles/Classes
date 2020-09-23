@@ -24,12 +24,12 @@ public class Request {
         return scanner.nextLine();
     }
     public ArrayList<String> friends(){
-        System.out.println("List your friends here. When done, hit '1'");
+        System.out.println("List your friends here. When done, hit '-1'");
         ArrayList<String> friends = new ArrayList<>();
-        while(!friends.contains("1")){
+        while(!friends.contains("-1")){
             friends.add(scanner.nextLine());
         }
-        friends.remove("1");
+        friends.remove("-1");
         return friends;
     }
 }
